@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Data Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">AI Data Solutions</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#ourwork" onclick="closeMenu()">Our Work</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+  </nav>
+</header>
+<section class="hero" id="home">
+  <h1>Empowering Business With AI</h1>
+  <p>Providing cutting-edge AI & data-driven solutions to elevate your business to the next level.</p>
+</section>
+<section class="section-box" id="about">
+  <h2>About Us</h2>
+  <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1050&q=80" alt="About">
+  <p>We are a team of data scientists, ML engineers, and developers focused on solving real-world business challenges using artificial intelligence and analytics.</p>
+</section>
+<section class="section-box" id="services">
+  <h2>Our Services</h2>
+  <div class="services-list">
+    <div class="service-item"><i class="fas fa-chart-line"></i><h3>Data Analytics</h3><p>Uncover trends and patterns using real-time data dashboards and visualization tools.</p></div>
+    <div class="service-item"><i class="fas fa-robot"></i><h3>Machine Learning</h3><p>Predictive models for customer churn, fraud detection, personalization, and more.</p></div>
+    <div class="service-item"><i class="fas fa-language"></i><h3>NLP Solutions</h3><p>Sentiment analysis, entity recognition, chatbot integration using cutting-edge NLP.</p></div>
+    <div class="service-item"><i class="fas fa-cloud"></i><h3>Cloud AI</h3><p>Build and deploy AI models on AWS, GCP, and Azure with full DevOps integration.</p></div>
+  </div>
+</section>
+<section class="section-box" id="ourwork">
+  <h2>Our Work</h2>
+  <div class="work-list">
+    <div class="work-item"><i class="fas fa-comments"></i><h3>AI Chatbot for Banking</h3><p>Developed a multilingual chatbot for a leading bank, reducing call center load by 60%.</p></div>
+    <div class="work-item"><i class="fas fa-shield-alt"></i><h3>Fraud Detection System</h3><p>Built a real-time ML model to detect payment anomalies and prevent digital fraud.</p></div>
+    <div class="work-item"><i class="fas fa-user-friends"></i><h3>Customer Segmentation</h3><p>Used clustering algorithms to identify key customer groups for targeted marketing.</p></div>
+    <div class="work-item"><i class="fas fa-store"></i><h3>Retail Sales Forecasting</h3><p>Implemented time-series models to help a retail brand forecast inventory & sales trends.</p></div>
+  </div>
+</section>
+<section class="section-box" id="contact">
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<footer>
+  &copy; 2025 AI Data Solutions. All rights reserved.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
